@@ -9,6 +9,7 @@
 import UIKit
 
 class PhotosViewController: UIViewController {
+    var mediaData: [NSDictionary]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,32 +17,24 @@ class PhotosViewController: UIViewController {
         let clientId = "b3f395b259d3483b9e708b58adff634d"
         let url = NSURL(string: "https://api.instagram.com/v1/media/popular?client_id=\(clientId)")!
         let request = NSURLRequest(URL: url)
-
-        // TODO: try to get this working with NSURLSession instead?
-//        let session = NSURLSession.sharedSession()
-//        session.dataTaskWithRequest(request, completionHandler: {(data, response, error) in
-//            print(data)
-//            print(response)
-//            print(error)
-//        })?.resume()
-        
-        
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
             if (error != nil) {
                 print(error)
                 return
-            } else {
-                print("ok")
             }
-//            do {
-//                let gdata = data as NSData!
-//                let json = try NSJSONSerialization.JSONObjectWithData(gdata, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
-//                if let json = json {
-//                        print(json)
-//                }
-//            } catch {
-//                print("deserialize error")
-//            }
+            do {
+                let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments) as? NSDictionary
+                if let json = json {
+                    self.mediaData = json["data"] as? [NSDictionary]
+                    print(self.mediaData)
+                } else {
+                    print("deserialize error")
+                    return
+                }
+            } catch {
+                print("deserialize error")
+                return
+            }
 //            self.photos = responseDictionary["data"] as! NSArray
 //            self.tableView.reloadData()
 //            print(self.photos)
