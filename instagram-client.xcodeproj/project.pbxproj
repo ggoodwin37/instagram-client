@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F31A36C91B8E732F0092C995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A36C81B8E732F0092C995 /* AppDelegate.swift */; };
+		F31A36CB1B8E732F0092C995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A36CA1B8E732F0092C995 /* ViewController.swift */; };
+		F31A36CE1B8E732F0092C995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A36CC1B8E732F0092C995 /* Main.storyboard */; };
+		F31A36D01B8E732F0092C995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31A36CF1B8E732F0092C995 /* Assets.xcassets */; };
+		F31A36D31B8E732F0092C995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A36D11B8E732F0092C995 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F31A36C51B8E732F0092C995 /* instagram-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instagram-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31A36C81B8E732F0092C995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F31A36CA1B8E732F0092C995 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F31A36CD1B8E732F0092C995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F31A36CF1B8E732F0092C995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F31A36D21B8E732F0092C995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F31A36D41B8E732F0092C995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F31A36C21B8E732E0092C995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F31A36BC1B8E732E0092C995 = {
+			isa = PBXGroup;
+			children = (
+				F31A36C71B8E732F0092C995 /* instagram-client */,
+				F31A36C61B8E732F0092C995 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F31A36C61B8E732F0092C995 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F31A36C51B8E732F0092C995 /* instagram-client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F31A36C71B8E732F0092C995 /* instagram-client */ = {
+			isa = PBXGroup;
+			children = (
+				F31A36C81B8E732F0092C995 /* AppDelegate.swift */,
+				F31A36CA1B8E732F0092C995 /* ViewController.swift */,
+				F31A36CC1B8E732F0092C995 /* Main.storyboard */,
+				F31A36CF1B8E732F0092C995 /* Assets.xcassets */,
+				F31A36D11B8E732F0092C995 /* LaunchScreen.storyboard */,
+				F31A36D41B8E732F0092C995 /* Info.plist */,
+			);
+			path = "instagram-client";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F31A36C41B8E732E0092C995 /* instagram-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31A36D71B8E732F0092C995 /* Build configuration list for PBXNativeTarget "instagram-client" */;
+			buildPhases = (
+				F31A36C11B8E732E0092C995 /* Sources */,
+				F31A36C21B8E732E0092C995 /* Frameworks */,
+				F31A36C31B8E732E0092C995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "instagram-client";
+			productName = "instagram-client";
+			productReference = F31A36C51B8E732F0092C995 /* instagram-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F31A36BD1B8E732E0092C995 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Gideon Goodwin";
+				TargetAttributes = {
+					F31A36C41B8E732E0092C995 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = F31A36C01B8E732E0092C995 /* Build configuration list for PBXProject "instagram-client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F31A36BC1B8E732E0092C995;
+			productRefGroup = F31A36C61B8E732F0092C995 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F31A36C41B8E732E0092C995 /* instagram-client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F31A36C31B8E732E0092C995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31A36D31B8E732F0092C995 /* LaunchScreen.storyboard in Resources */,
+				F31A36D01B8E732F0092C995 /* Assets.xcassets in Resources */,
+				F31A36CE1B8E732F0092C995 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F31A36C11B8E732E0092C995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31A36CB1B8E732F0092C995 /* ViewController.swift in Sources */,
+				F31A36C91B8E732F0092C995 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F31A36CC1B8E732F0092C995 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F31A36CD1B8E732F0092C995 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F31A36D11B8E732F0092C995 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F31A36D21B8E732F0092C995 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F31A36D51B8E732F0092C995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F31A36D61B8E732F0092C995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F31A36D81B8E732F0092C995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "instagram-client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ggoodwin37.instagram-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F31A36D91B8E732F0092C995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "instagram-client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ggoodwin37.instagram-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F31A36C01B8E732E0092C995 /* Build configuration list for PBXProject "instagram-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31A36D51B8E732F0092C995 /* Debug */,
+				F31A36D61B8E732F0092C995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F31A36D71B8E732F0092C995 /* Build configuration list for PBXNativeTarget "instagram-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31A36D81B8E732F0092C995 /* Debug */,
+				F31A36D91B8E732F0092C995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F31A36BD1B8E732E0092C995 /* Project object */;
+}
