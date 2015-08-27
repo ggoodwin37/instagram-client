@@ -15,6 +15,16 @@ class PhotosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.rowHeight = 320
+        self.loadData()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func loadData() {
         let clientId = "b3f395b259d3483b9e708b58adff634d"
         let url = NSURL(string: "https://api.instagram.com/v1/media/popular?client_id=\(clientId)")!
         let request = NSURLRequest(URL: url)
@@ -36,17 +46,9 @@ class PhotosViewController: UIViewController {
                 print("deserialize error")
                 return
             }
-//            self.photos = responseDictionary["data"] as! NSArray
-//            self.tableView.reloadData()
-//            print(self.photos)
+            self.tableView.reloadData()
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation
