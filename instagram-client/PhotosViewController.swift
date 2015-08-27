@@ -29,6 +29,9 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("com.ggoodwin37.instagramTableViewCell", forIndexPath: indexPath) as! InstagramTableViewCell
 //        let cityState = data[indexPath.row].componentsSeparatedByString(", ")
+        // TODO: resume here, need to set the real image URL for each row. could get tricky since some entries are actually videos, we might have different
+        //       sets of asset resolutions for each row, etc.
+        // TODO: also figure out layout for the image in each cell.
         let url = NSURL(string: "https://nadlembehresort.files.wordpress.com/2012/09/mg_2256-c3a5terstc3a4lld.jpg")!
         cell.previewImage.setImageWithURL(url)
         return cell
