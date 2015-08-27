@@ -14,6 +14,7 @@
 		F31A36D01B8E732F0092C995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31A36CF1B8E732F0092C995 /* Assets.xcassets */; };
 		F31A36D31B8E732F0092C995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A36D11B8E732F0092C995 /* LaunchScreen.storyboard */; };
 		F368739E1B8E7721000C36CB /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368739D1B8E7721000C36CB /* PhotosViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F3EF5B7D1B8E889D008F1577 /* InstagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EF5B7C1B8E889D008F1577 /* InstagramTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F31A36D21B8E732F0092C995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F31A36D41B8E732F0092C995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F368739D1B8E7721000C36CB /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		F3EF5B7C1B8E889D008F1577 /* InstagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				F31A36D11B8E732F0092C995 /* LaunchScreen.storyboard */,
 				F31A36D41B8E732F0092C995 /* Info.plist */,
 				F368739D1B8E7721000C36CB /* PhotosViewController.swift */,
+				F3EF5B7C1B8E889D008F1577 /* InstagramTableViewCell.swift */,
 			);
 			path = "instagram-client";
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EF5B7D1B8E889D008F1577 /* InstagramTableViewCell.swift in Sources */,
 				F368739E1B8E7721000C36CB /* PhotosViewController.swift in Sources */,
 				F31A36CB1B8E732F0092C995 /* ViewController.swift in Sources */,
 				F31A36C91B8E732F0092C995 /* AppDelegate.swift in Sources */,

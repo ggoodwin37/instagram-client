@@ -9,6 +9,7 @@
 import UIKit
 
 class PhotosViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
     var mediaData: [NSDictionary]?
 
     override func viewDidLoad() {
