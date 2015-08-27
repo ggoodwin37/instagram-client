@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PhotosViewController: UIViewController {
+class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     var mediaData: [NSDictionary]?
 
@@ -16,12 +16,31 @@ class PhotosViewController: UIViewController {
         super.viewDidLoad()
 
         tableView.rowHeight = 320
+        tableView.dataSource = self
+        tableView.delegate = self
         self.loadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("com.ggoodwin37.instagramTableViewCell", forIndexPath: indexPath) as! InstagramTableViewCell
+//        let cityState = data[indexPath.row].componentsSeparatedByString(", ")
+        let url = NSURL(string: "https://nadlembehresort.files.wordpress.com/2012/09/mg_2256-c3a5terstc3a4lld.jpg")!
+        cell.previewImage.setImageWithURL(url)
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let mediaData = self.mediaData {
+            print("I have \(mediaData.count) rows")
+            return mediaData.count
+        }
+        print("I have no rows at all")
+        return 0
     }
 
     func loadData() {
